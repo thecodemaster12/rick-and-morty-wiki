@@ -1,3 +1,14 @@
+$borderRadious: 12px;
+
+.cards{
+    border: 2px solid #0b5ed7;
+    border-radius: $borderRadious;
+}
+
+.img {
+    border-radius: $borderRadious $borderRadious 0 0;
+}
+
 .badge {
     top: 10px;
     right: 15px;
