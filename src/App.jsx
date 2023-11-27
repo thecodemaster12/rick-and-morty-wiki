@@ -6,20 +6,22 @@ import Cards from "./components/cards/Cards"
 import { useEffect, useState } from "react"
 
 function App() {
-  let [pageNumber, setPageNumber] = useState(99);
+  let [pageNumber, setPageNumber] = useState(1);
   let [fetchedData, setFetchedData] = useState([]);
   let {info , results} = fetchedData;
 
-  let apiUrl = `"https://rickandmortyapi.com/api/character/?page=${pageNumber}`;
-
-
+  console.log(results);
+  
+  let apiUrl = `https://rickandmortyapi.com/api/character/?page=${pageNumber}`;
+  
+  
   useEffect(()=>{
     (async function(){
       let data = await fetch(apiUrl).then(res=>res.json())
       setFetchedData(data)
     })()
   },[apiUrl])
-
+  
   return (
     <>
       <h1 className="text-center ubuntu fw-bolder my-4">Rick and Morty <span className="text-primary">Wiki</span></h1>
