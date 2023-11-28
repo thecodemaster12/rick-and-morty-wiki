@@ -24,8 +24,10 @@ const Pagination = ({info, pageNumber, setPageNumber}) => {
     forcePage={pageNumber===1?0:pageNumber-1}
     nextLabel="Next"
     previousLabel="Prev"
-    nextClassName='btn btn-primary  text-secondary'
-    previousClassName='btn btn-primary  text-secondary'
+    nextClassName='btn btn-primary'
+    previousClassName='btn btn-primary'
+    nextLinkClassName="text-decoration-none text-light"
+    previousLinkClassName="text-decoration-none text-light"
     pageClassName='page-item'
     pageLinkClassName='page-link'
     activeClassName='active'
