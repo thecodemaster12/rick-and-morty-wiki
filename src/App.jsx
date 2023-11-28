@@ -6,8 +6,25 @@ import Cards from "./components/cards/Cards"
 import { useEffect, useState } from "react"
 import Pagination from "./components/pagination/Pagination"
 import Search from "./components/search/Search"
+import Navbar from "./components/Navbar/Navbar"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import Episodes from "./pages/Episodes"
+import Location from "./pages/Location"
 
 function App() {
+  return(
+    <Router>
+        <Navbar/>
+      <Routes>
+        <Route path="/" element={<Home />}/>
+        <Route path="/episodes" element={<Episodes />}/>
+        <Route path="/location" element={<Location />}/>
+      </Routes>
+    </Router>
+  )
+}
+
+const  Home = () => {
   let [pageNumber, setPageNumber] = useState(1);
   let [fetchedData, setFetchedData] = useState([]);
   let [search, setSearch] = useState('')
@@ -28,8 +45,6 @@ function App() {
   
   return (
     <>
-      <h1 className="text-center ubuntu fw-bolder my-4">Rick and Morty <span className="text-primary">Wiki</span></h1>
-
     <Search setPageNumber={setPageNumber} setSearch={setSearch}/>
 
       <div className="container">
