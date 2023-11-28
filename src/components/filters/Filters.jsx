@@ -6,7 +6,7 @@ import Status from "./Category/Status";
 const Filters = ({setStatus, setGender, setSpecies, setPageNumber}) => {
   return (
     <>
-      <div className="col-3">
+      <div className="col-lg-3 col-12 mb-5">
         <div className="text-center fw-bold fs-4 mb-2">Filter</div>
         <div className="text-center text-primary c text-decoration-underline mb-4">
           Clear All

@@ -5,7 +5,7 @@ import Cards from '../components/cards/Cards'
 import InputGroup from '../components/filters/Category/InputGroup'
 
 const Episodes = () => {
-    let [id, serId] = useState(1)
+    let [id, setId] = useState(1)
     let [info, setInfo] = useState([])
     let {air_date, name} = info
     let [results, setResults] = useState([])
@@ -23,7 +23,7 @@ const Episodes = () => {
             )
             setResults(char)
         })()
-    },[serId])
+    },[aprUrl])
   return (
     <>
         <div className="container">
@@ -36,15 +36,15 @@ const Episodes = () => {
                 </h5>
             </div>
             <div className="row">
-                <div className="col-3">
+                <div className="col-lg-3 col-12">
                     <h4 className="text-center mb-4">
                         Pick Episodes
                     </h4>
-                    <InputGroup total = {51}/>
+                    <InputGroup name="Episode" setId={setId} total = {51}/>
                 </div>
-                <div className="col-8">
+                <div className="col-lg-8 col-12">
                     <div className="row">
-                        <Cards results={results} />
+                        <Cards page="/episodes/" results={results} />
                     </div>
                 </div>
             </div>
