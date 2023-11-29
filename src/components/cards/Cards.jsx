@@ -13,11 +13,11 @@ const Cards = ({results ,page}) => {
          to={`${page}${id}`} className="col-lg-4 col-md-6 col-12 mb-5 position-relative" key={id}>
           <div className={`${styles.cards} d-flex flex-column justify-content-center`}>
             <img src={image} alt="img" className={`img-fluid ${styles.img}`}/>
-            <div className="content px-2">
+            <div className="content px-2 pb-2">
               <div className="fs-5 mb-2 fw-bold text-dark">{name}</div>
-              <div className="text-dark">{gender}</div>
-              <div className="text-dark">{species}</div>
-              <div className="text-dark">{location.name}</div>
+              <div className="text-dark"><span className='fw-bold'>Gender :</span> {gender}</div>
+              <div className="text-dark"><span className='fw-bold'>Species :</span> {species}</div>
+              <div className="text-dark"><span className='fw-bold'>Location :</span> {location.name}</div>
             </div>
           </div>
           {(()=>{
