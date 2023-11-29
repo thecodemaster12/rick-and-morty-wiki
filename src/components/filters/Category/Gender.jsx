@@ -24,7 +24,7 @@ const Gender = ({setGender, setPageNumber}) => {
           aria-labelledby="headingOne"
           data-bs-parent="#accordionExample"
         >
-          <div className="accordion-body">
+          <div className="accordion-body d-flex flex-sm-row flex-lg-column flex-wrap gap-2">
             {gender.map((item, index)=> <FilterBtn task={setGender} setPageNumber={setPageNumber} key={index} name="gender" item={item} index={index} /> )}
           </div>
         </div>

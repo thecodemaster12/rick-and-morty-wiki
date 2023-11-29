@@ -24,7 +24,7 @@ const Status = ({setStatus, setPageNumber}) => {
           aria-labelledby="headingThree"
           data-bs-parent="#accordionExample"
         >
-          <div className="accordion-body">
+          <div className="accordion-body d-flex flex-sm-row flex-lg-column flex-wrap gap-2">
             {status.map((item,index)=>(
             <FilterBtn 
             task={setStatus}

@@ -36,7 +36,7 @@ const Species = ({setSpecies, setPageNumber}) => {
           aria-labelledby="headingTwo"
           data-bs-parent="#accordionExample"
         >
-          <div className="accordion-body">
+          <div className="accordion-body d-flex flex-sm-row flex-lg-column flex-wrap gap-2">
             {species.map((item, index)=> <FilterBtn setPageNumber={setPageNumber} task={setSpecies} key={index} name='species' item={item} index={index}/>)}
           </div>
         </div>

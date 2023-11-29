@@ -42,7 +42,7 @@ const Cards = ({results ,page}) => {
     })
   }
   else{
-    display = "No Data Found"
+    display = <div className="fw-bold text-center my-5">No Data Found</div>
   }
 
   return (
