@@ -11,6 +11,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Episodes from "./pages/Episodes"
 import Location from "./pages/Location"
 import CardDetails from "./components/cards/CardDetails"
+import Footer from "./components/Footer/Footer"
 
 function App() {
   return(
@@ -66,6 +67,7 @@ const  Home = () => {
       </div>
 
       <Pagination info={info} setPageNumber={setPageNumber} pageNumber={pageNumber}/>
+      <Footer/>
     </>
   )
 }
