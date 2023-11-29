@@ -1,10 +1,10 @@
 # Rick and Morty Wiki
 
-This project is a Rick and Morty Wiki. The application consists of a listing of all the series' characters as well as a details page for each one of them.
+Dive into the vast multiverse of "Rick and Morty" with our comprehensive wiki! Explore detailed character profiles, discover who played a role in each episode, and explore the diverse locations that span across dimensions. The site features an easy-to-use search option, making it a breeze to find your favorite characters.
 
-## Site [Demo](#) 
+## Site [Demo](https://rick-and-morty-wikis.netlify.app/) 
 
-![Site Screenshot](./src/ions/ficon.jpeg)
+![Site Screenshot](./src/icons/site.png)
 
 ## Technologies Used
 - React
